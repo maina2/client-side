@@ -5,7 +5,7 @@ import Home from './pages/Home'
 import Store from './pages/Store';
 import Profile from './pages/Profile'
 import Logout from './components/Logout'
-import Signup from './pages/SIgnup';
+import Signup from './pages/Signup';
 import Cart from './pages/Cart';
 import Navbar from './components/Navbar';
 import Action from './pages/Action';
