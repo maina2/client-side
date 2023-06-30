@@ -11,7 +11,7 @@ function Adventure() {
 
   const fetchGames = async () => {
     try {
-      const response = await axios.get('http://localhost:3000/Games/2');
+      const response = await axios.get('https://mygamestoreapi.azurewebsites.net//Games/2');
       setGames(response.data);
     } catch (error) {
       console.log(error);

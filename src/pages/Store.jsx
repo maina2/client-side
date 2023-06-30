@@ -11,7 +11,7 @@ function Gamestore() {
 
   const fetchGames = async () => {
     try {
-      const response = await axios.get('http://localhost:3000/Games');
+      const response = await axios.get('https://mygamestoreapi.azurewebsites.net//Games');
       setGames(response.data);
     } catch (error) {
       console.log(error);
@@ -20,7 +20,7 @@ function Gamestore() {
 
   const addToCart = async (gameId) => {
     try {
-      const response = await axios.post('http://localhost:3000/Orders', { gameId });
+      const response = await axios.post('https://mygamestoreapi.azurewebsites.net//Orders', { gameId });
       console.log('Order added to cart:', response.data);
     } catch (error) {
       console.log(error);

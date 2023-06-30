@@ -11,7 +11,7 @@ function Sports() {
 
   const fetchGames = async () => {
     try {
-      const response = await axios.get('http://localhost:3000/Games/3');
+      const response = await axios.get('https://mygamestoreapi.azurewebsites.net//Games/3');
       setGames(response.data);
     } catch (error) {
       console.log(error);

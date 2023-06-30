@@ -12,7 +12,7 @@ function Roleplaying() {
 
   const fetchGames = async () => {
     try {
-      const response = await axios.get('http://localhost:3000/Games/4');
+      const response = await axios.get('https://mygamestoreapi.azurewebsites.net//Games/4');
       setGames(response.data);
       setIsLoaded(true);
     } catch (error) {
