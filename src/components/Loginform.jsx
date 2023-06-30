@@ -26,7 +26,7 @@ export default function Loginform() {
   });
 
   const onSubmit = (data) => {
-    Axios.post("http://localhost:3000/Auth/Login", data)
+    Axios.post("https://mygamestoreapi.azurewebsites.net//Auth/Login", data)
       .then(({ data }) => {
         if (data.token) {
           dispatch({ type: "LOGIN_SUCCESS", payload: data });
