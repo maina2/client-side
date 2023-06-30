@@ -1,0 +1,1 @@
+export const apiDomain = 'mygamestoreapi.azurewebsites.net';
