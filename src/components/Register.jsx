@@ -4,7 +4,6 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import "./register.css";
 import Axios from "axios";
 import { Link } from 'react-router-dom';
-import { apiDomain } from "../utils/utils"; 
 
 
 export default function Register() {
@@ -23,7 +22,7 @@ export default function Register() {
   });
 
   const onSubmit = (data) => {
-    Axios.post(`${ apiDomain }/Auth/Register`, data)
+    Axios.post("https://mygamestoreapi.azurewebsites.net//Auth/Register", data)
       .then((response) => {
         console.log(response);
         response.data.message && alert(response.data.message);
